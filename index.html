@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="Yizhe Zhu" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Yizhe Zhu's Homepage</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+   <!--  <link href="jumbotron.css" rel="stylesheet"> -->
+    <link href="narrow-jumbotron.css" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/65cdeb203c.js"></script>
+    <script type="text/javascript" src="http://zhanghang1989.github.io/files/hidebib.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li> -->
+          </ul>
+        </nav>
+        <!-- <h3 class="text-muted">Project name</h3> -->
+    </div>
+
+   
+
+     
+    <div class="container">
+      <div class="col-xs-11">
+    
+      <div class="media-left">  <img src="figure/zhu.jpg" alt="..." width=" 200" height="200" class="media-object img-rounded"> </div>
+      <div class="media-body">
+      <h2 class="media-heading">Yizhe(Ethan) Zhu</h2>
+      <p class="lead">I am a Ph.D. student in <a href="http://www.rutgers.edu/">Rutgers University</a>, supervised by <a href="https://www.cs.rutgers.edu/~elgammal/Home.html"> Professor Ahmed Elgammal</a>. My research interests include computer vision, machine learning and natural language processing.</p>
+<!-- 
+      <div class="col-xs-5 well col-sm-5"> -->
+       <div class="col-sm-4" style="background-color: #F0F8FF;">
+        <div class="row">
+        <div class="col-lg-10">
+        <h3>
+        <a href="https://github.com/EthanZhu90" class="fa fa-github" aria-hidden="true"></a>
+        <a href="https://www.linkedin.com/in/yizhe-ethan-zhu-171a06126/" class="fa fa-linkedin" aria-hidden="true"></a>
+        <a href="https://www.facebook.com/yizhe.zhu" class="fa fa-facebook" aria-hidden="true"></a>
+        <a href="mailto:yizhe.zhu@rutgers.edu" class="fa fa-envelope" aria-hidden="true"></a>
+        <a href="figure/zhu_resume.pdf">[CV]</a>
+        </h3>
+        </div>
+        </div>
+      </div>
+
+   
+      </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="container"> 
+      <h2 class="media-heading">Publications</h2>
+      <h4 class="media-heading">(* indicates equal contributions)</h4>
+ 
+      <!-- paper ICCV17 -->
+      <div class="row">
+        <div class="col-xs-4 text-center"><img src="figure/iccv17.png" alt="..." width="230" height="115" class="media-object"> </div>
+        <div class="col-xs-8">
+          <p>
+          <heading><b>[ICCV'17]</b> A Multilayer-Based Framework for Online Background Subtraction with Freely Moving Cameras</heading><br>
+          <u><b>Yizhe Zhu</b></u>, 
+          <a href="https://www.cs.rutgers.edu/~elgammal/Home.html"> Ahmed Elgammal</a><br>
+          <em>International Conference on Computer Vision</em>, 2017<br>
+          <!-- <a href="https://arxiv.org/abs/1612.02372">arXiv</a> |
+          <a href="https://github.com/mrxue1993/Differential-Angular-Imaging-for-Material-Recognition">code</a> |
+          <a href="http://eceweb1.rutgers.edu/vision/gts/gtos.html">project</a>  -->
+          <a class="button" href="javascript:toggleblock('ICCV17_abs')">abstract</a> <br>
+          <p xml:space="preserve"> <i id="ICCV17_abs" style="display: none;"> The exponentially increasing use of moving platforms for video capture introduces the urgent need to develop the general background subtraction algorithms with the capability to deal with the moving background. In this paper, we propose a multilayer-based framework for online background subtraction for videos captured by moving cameras. Unlike the previous treatments of the problem, the proposed method is not restricted to binary segmentation of background and foreground, but formulates it as a multi-label segmentation problem by modeling multiple foreground objects in different layers when they appear simultaneously in the scene. We assign an independent processing layer to each foreground object, as well as the background, where both motion and appearance models are estimated, and a probability map is inferred using a Bayesian filtering framework. Finally, Multi-label Graph-cut on Markov Random Field is employed to perform pixel-wise labeling. Extensive evaluation results show that the proposed method outperforms state-of-the-art methods on challenging video sequences. </i></p>
+          </p>
+        </div>
+      </div>
+      <hr>
+    <!-- paper CVPR17 -->
+    <div class="row">
+        <div class="col-xs-4 text-center"><img src="figure/cvpr17.png" alt="..." width="230" height="115" class="media-object"> </div>
+        <div class="col-xs-8">
+        <p>
+          <heading><b>[CVPR'17]</b> Link the head to the “beak”: Zero Shot Learning
+          from Noisy Text Description at Part Precision</heading><br>
+          <a href="https://sites.google.com/site/mhelhoseiny/"> Mohamed Elhoseiny</a>*, 
+          <u><b>Yizhe Zhu*</b></u>, 
+          <a href="http://paul.rutgers.edu/~hz138/"> Han Zhang</a>, 
+          <a href="https://www.cs.rutgers.edu/~elgammal/Home.html"> Ahmed Elgammal</a><br>
+          <em>IEEE Conference on Computer Vision and Pattern Recognition </em>, 2017<br>
+          <a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Elhoseiny_Link_the_Head_CVPR_2017_paper.pdf">paper</a> |
+          <a href="http://openaccess.thecvf.com/content_cvpr_2017/supplemental/Elhoseiny_Link_the_Head_2017_CVPR_supplemental.pdf">SupMat</a> |
+
+          <a class="button" href="javascript:toggleblock('CVPR17_abs')">abstract</a> |
+          <a href="https://github.com/EthanZhu90/ZSL_PP">code</a> <br>
+          <p xml:space="preserve"> <i id="CVPR17_abs" style="display: none;"> In this paper, we study learning visual classifiers from   unstructured text descriptions at part precision with no training images. We propose a learning framework that is able to connect text terms to its relevant parts and suppress connections to non-visual text terms without any part-text annotations.  For instance, this learning process enables terms like ``beak'' to be sparsely linked to the visual representation of parts like head, while reduces the effect of non-visual terms like ``migrate'' on classifier prediction.  Images are encoded by a part-based CNN that detect bird parts and learn part-specific representation. Part-based visual classifiers are predicted from text descriptions of unseen visual classifiers to facilitate classification without training images (also known as zero-shot recognition). We performed our experiments on CUBirds 2011 dataset and improves the state-of-the-art text-based zero-shot recognition results from 34.7\% to 43.6\%. We also created large scale benchmarks on North American Bird Images augmented with text descriptions, where we also show that our approach outperforms existing methods. </i></p>
+          <!-- <a href="http://eceweb1.rutgers.edu/vision/gts/gtos.html">project</a>  -->
+        </p>
+        </div>
+    </div>
+    <hr>
+
+
+
+    
+
+     
+
+      <footer class="footer">
+        <p>&copy; 2017. All rights reserved.</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
