@@ -81,8 +81,8 @@
       </div>
     </div>
     <hr>
-      
-    <!-- News -->
+       
+        <!-- News -->
      <div class="container"> 
       <h2 class="media-heading">News</h2>
       </div>
@@ -106,8 +106,7 @@
 
     <div class="container" style="padding-top: 50px;">
     </div>
-      
-      
+    
     <div class="container"> 
       <h2 class="media-heading">Publications</h2>
       <h4 class="media-heading">(* indicates equal contributions)</h4>
@@ -126,13 +125,15 @@
         <a href="https://www.cs.rutgers.edu/~elgammal/Home.html"> Ahmed Elgammal</a><br>
         <em>IEEE Conference on Computer Vision and Pattern Recognition</em>, Salt Lake City, June 2018<br>
         <a href="https://arxiv.org/abs/1712.01381">paper</a> |
-        <a class="button" href="javascript:toggleblock('CVPR18_abs')">abstract</a> |
+        <a onclick="togglediv('CVPR18_GAZSL')">abstract</a> |
         <a href="figure/GAN_ZSL_CVPR18.pdf">poster</a> |
         <a href="https://github.com/EthanZhu90/ZSL_GAN_CVPR18">code</a> <br>
-        <p xml:space="preserve"> <i id="CVPR17_abs" style="display: none;">
+        <!--<p xml:space="preserve"> <i id="CVPR18_GAZSL" style="display: none;"> -->
+        <div id = "CVPR18_GAZSL", style="display: none">
          Most existing zero-shot learning methods consider the problem as a visual semantic embedding one. Given the demonstrated capability of Generative Adversarial Networks(GANs) to generate images, we instead leverage GANs to imagine unseen categories from text descriptions and hence recognize novel classes with no examples being seen. Specifically, we propose a simple yet effective generative model that takes as input noisy text descriptions about an unseen class (e.g.Wikipedia articles) and generates synthesized visual features for this class. With added pseudo data, zero-shot learning is naturally converted to a traditional classification problem. Additionally, to preserve the inter-class discrimination of the generated features, a visual pivot regularization is proposed as an explicit supervision.
 Unlike previous methods using complex engineered regularizers, our approach can suppress the noise well without additional regularization. Empirically, we show that our method consistently outperforms the state of the art on the largest available benchmarks on Text-based Zero-shot Learning.  
-         </i></p>
+        </div>
+          <!-- </i></p> -->
         <!-- <a href="http://eceweb1.rutgers.edu/vision/gts/gtos.html">project</a>  -->
         </font>
       </p>
@@ -149,10 +150,14 @@ Unlike previous methods using complex engineered regularizers, our approach can 
           <em>International Conference on Computer Vision</em>, Venice, Oct. 2017<br>
           <a href="http://openaccess.thecvf.com/content_ICCV_2017/papers/Zhu_A_Multilayer-Based_Framework_ICCV_2017_paper.pdf">paper</a> | 
           <a href="http://openaccess.thecvf.com/content_ICCV_2017/supplemental/Zhu_A_Multilayer-Based_Framework_ICCV_2017_supplemental.pdf">supp</a> |
-          <a class="button" href="javascript:toggleblock('ICCV17_abs')">abstract</a> |
+      
+          <a onclick="togglediv('ICCV17_abs')">abstract</a> |
           <a href="figure/MultilayerBSMC_ICCV17.pdf">poster</a> |
           <a href="https://github.com/EthanZhu90/MultilayerBSMC">code</a> <br>
-          <p xml:space="preserve"> <i id="ICCV17_abs" style="display: none;"> The exponentially increasing use of moving platforms for video capture introduces the urgent need to develop the general background subtraction algorithms with the capability to deal with the moving background. In this paper, we propose a multilayer-based framework for online background subtraction for videos captured by moving cameras. Unlike the previous treatments of the problem, the proposed method is not restricted to binary segmentation of background and foreground, but formulates it as a multi-label segmentation problem by modeling multiple foreground objects in different layers when they appear simultaneously in the scene. We assign an independent processing layer to each foreground object, as well as the background, where both motion and appearance models are estimated, and a probability map is inferred using a Bayesian filtering framework. Finally, Multi-label Graph-cut on Markov Random Field is employed to perform pixel-wise labeling. Extensive evaluation results show that the proposed method outperforms state-of-the-art methods on challenging video sequences. </i></p>
+
+          <div id = "ICCV17_abs", style="display: none">
+          The exponentially increasing use of moving platforms for video capture introduces the urgent need to develop the general background subtraction algorithms with the capability to deal with the moving background. In this paper, we propose a multilayer-based framework for online background subtraction for videos captured by moving cameras. Unlike the previous treatments of the problem, the proposed method is not restricted to binary segmentation of background and foreground, but formulates it as a multi-label segmentation problem by modeling multiple foreground objects in different layers when they appear simultaneously in the scene. We assign an independent processing layer to each foreground object, as well as the background, where both motion and appearance models are estimated, and a probability map is inferred using a Bayesian filtering framework. Finally, Multi-label Graph-cut on Markov Random Field is employed to perform pixel-wise labeling. Extensive evaluation results show that the proposed method outperforms state-of-the-art methods on challenging video sequences.
+          </div>
           </font>
           </p>
       </div>
@@ -172,17 +177,23 @@ Unlike previous methods using complex engineered regularizers, our approach can 
         <em>IEEE Conference on Computer Vision and Pattern Recognition</em>, Hawaii, July 2017<br>
         <a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Elhoseiny_Link_the_Head_CVPR_2017_paper.pdf">paper</a> |
         <a href="http://openaccess.thecvf.com/content_cvpr_2017/supplemental/Elhoseiny_Link_the_Head_2017_CVPR_supplemental.pdf">supp</a> |
-
-        <a class="button" href="javascript:toggleblock('CVPR17_abs')">abstract</a> |
+        <a onclick="togglediv('CVPR17_abs')">abstract</a> |
         <a href="https://github.com/EthanZhu90/ZSL_PP">code</a> <br>
-        <p xml:space="preserve"> <i id="CVPR17_abs" style="display: none;"> In this paper, we study learning visual classifiers from   unstructured text descriptions at part precision with no training images. We propose a learning framework that is able to connect text terms to its relevant parts and suppress connections to non-visual text terms without any part-text annotations.  For instance, this learning process enables terms like ``beak'' to be sparsely linked to the visual representation of parts like head, while reduces the effect of non-visual terms like ``migrate'' on classifier prediction.  Images are encoded by a part-based CNN that detect bird parts and learn part-specific representation. Part-based visual classifiers are predicted from text descriptions of unseen visual classifiers to facilitate classification without training images (also known as zero-shot recognition). We performed our experiments on CUBirds 2011 dataset and improves the state-of-the-art text-based zero-shot recognition results from 34.7\% to 43.6\%. We also created large scale benchmarks on North American Bird Images augmented with text descriptions, where we also show that our approach outperforms existing methods. </i></p>
-        <!-- <a href="http://eceweb1.rutgers.edu/vision/gts/gtos.html">project</a>  -->
+        <div id = "CVPR17_abs", style="display: none">
+         In this paper, we study learning visual classifiers from unstructured text descriptions at part precision with no training images. We propose a learning framework that is able to connect text terms to its relevant parts and suppress connections to non-visual text terms without any part-text annotations.  For instance, this learning process enables terms like ``beak'' to be sparsely linked to the visual representation of parts like head, while reduces the effect of non-visual terms like ``migrate'' on classifier prediction.  Images are encoded by a part-based CNN that detect bird parts and learn part-specific representation. Part-based visual classifiers are predicted from text descriptions of unseen visual classifiers to facilitate classification without training images (also known as zero-shot recognition). We performed our experiments on CUBirds 2011 dataset and improves the state-of-the-art text-based zero-shot recognition results from 34.7\% to 43.6\%. We also created large scale benchmarks on North American Bird Images augmented with text descriptions, where we also show that our approach outperforms existing methods. 
+         </div>
         </font>
       </p>
     </div>
     <hr>  
+    
+    <script>
+    function togglediv(id) {
+        var div = document.getElementById(id);
+        div.style.display = div.style.display == "none" ? "block" : "none";
+    }
+    </script>
 
-   
     <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=uUnZk8Z2r5iKnbxl6FtRkMDbwLa7jor51ZHMC5PgM9s"></script>
     
    
