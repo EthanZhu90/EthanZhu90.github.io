@@ -112,6 +112,46 @@
     <div class="container"> 
       <h2 class="media-heading">Publications</h2>
       <h4 class="media-heading">(* indicates equal contributions)</h4>
+             <!-- paper ICCV19 -->
+    <div class="media-left">  <img src="figure/ABP_ICCV19.png" alt="..." width=" 250" height="110" class="media-object img-rounded"> </div>
+    <div class="media-right">
+      <p><font size ="3.5">
+        <heading><b>[CVPR'18]</b> Learning Feature-to-Feature Translator by Alternating Back-Propagation for Zero-Shot Learning
+        </heading><br>
+        <u><b>Yizhe Zhu</b></u>, 
+        <a href="http://www.stat.ucla.edu/~jxie/">  Jianwen Xie </a>, 
+        Bingchen Liu, 
+        <a href="https://www.cs.rutgers.edu/~elgammal/Home.html"> Ahmed Elgammal</a><br>
+        <em>International Conference on Computer Vision</em>, Seoul, Oct. 2019<br>
+        <a href="https://arxiv.org/abs/1904.10056">paper</a> |
+        <a onclick="togglediv('ICCV19_ABP')">abstract</a> |
+        <a>poster</a> |
+        <a>code</a> <br>
+        <!--<p xml:space="preserve"> <i id="CVPR18_GAZSL" style="display: none;"> -->
+        <div id = "ICCV19_ABPZSL", style="display: none">
+         We investigate learning feature-to-feature translator
+networks by alternating back-propagation as a generalpurpose solution to zero-shot learning (ZSL) problems. Our
+method can be categorized to a generative model-based ZSL
+one. In contrast to the GAN or VAE that requires auxiliary networks to assist the training, our model consists of
+a single conditional generator that maps the class feature
+and a latent vector to the image feature, and is trained by
+maximum likelihood estimation. The training process is a
+simple yet effective EM-like process that iterates the following two steps: (i) the inferential back-propagation to infer
+the latent noise vector of each observed data, and (ii) the
+learning back-propagation to update the parameters of the
+model. With slight modifications of our model, we also provide a solution to learning from incomplete visual features
+for ZSL. We conduct extensive comparisons with existing
+generative ZSL methods on five benchmarks, demonstrating the superiority of our method in not only performance
+but also convergence speed and computational cost. Specifically, our model outperforms the existing state-of-the-art
+methods by a remarkable margin up to 3.1% and 4.0% in
+ZSL and generalized ZSL settings, respectively.
+        </div>
+          <!-- </i></p> -->
+        <!-- <a href="http://eceweb1.rutgers.edu/vision/gts/gtos.html">project</a>  -->
+        </font>
+      </p>
+    </div>
+    <hr>
       
        <!-- paper CVPR18 -->
     <div class="media-left">  <img src="figure/cvpr18.PNG" alt="..." width=" 250" height="110" class="media-object img-rounded"> </div>
