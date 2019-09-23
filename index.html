@@ -156,7 +156,7 @@
       title={Semantic-Guided Multi-Attention Localization for Zero-Shot Learning}, <br>
       author={Zhu, Yizhe and Xie, Jianwen and Tang, Zhiqiang and Peng, Xi and Elgammal, Ahmed},  <br>
       booktitle = {Thirty-third Conference on Neural Information Processing Systems (NeurIPS)},  <br>
-      month = {Oct},  <br>
+      month = {Dec},  <br>
       year = {2019} <br>
       }
       </div>
@@ -181,6 +181,7 @@
         <em>International Conference on Computer Vision</em>, Seoul, Oct. 2019<br>
         <a href="https://arxiv.org/abs/1904.10056">paper</a> |
         <a onclick="togglediv('ICCV19_ABP')">abstract</a> |
+        <a onclick="togglediv('ICCV19_bibtex')">bibtex</a> |
         <a>poster</a> |
         <a>code</a> <br>
         <!--<p xml:space="preserve"> <i id="CVPR18_GAZSL" style="display: none;"> -->
@@ -216,8 +217,7 @@
     <div class="media-left">  <img src="figure/cvpr18.PNG" alt="..." width=" 250" height="110" class="media-object img-rounded"> </div>
     <div class="media-right">
       <p><font size ="3.5">
-        <heading><b>[CVPR'18]</b> A Generative Adversarial  Approach
-          for Zero-Shot Learning from Noisy Texts
+        <heading><b>[CVPR'18]</b> A Generative Adversarial  Approach for Zero-Shot Learning from Noisy Texts
         </heading><br>
         <u><b>Yizhe Zhu</b></u>, 
         <a href="https://sites.google.com/site/mhelhoseiny/"> Mohamed Elhoseiny</a>, 
@@ -227,6 +227,7 @@
         <em>IEEE Conference on Computer Vision and Pattern Recognition</em>, Salt Lake City, June 2018<br>
         <a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhu_A_Generative_Adversarial_CVPR_2018_paper.pdf">paper</a> |
         <a onclick="togglediv('CVPR18_GAZSL')">abstract</a> |
+        <a onclick="togglediv('CVPR18_bibtex')">bibtex</a> |
         <a href="figure/GAN_ZSL_CVPR18.pdf">poster</a> |
         <a href="https://github.com/EthanZhu90/ZSL_GAN_CVPR18">code</a> <br>
         <!--<p xml:space="preserve"> <i id="CVPR18_GAZSL" style="display: none;"> -->
@@ -234,6 +235,17 @@
          Most existing zero-shot learning methods consider the problem as a visual semantic embedding one. Given the demonstrated capability of Generative Adversarial Networks(GANs) to generate images, we instead leverage GANs to imagine unseen categories from text descriptions and hence recognize novel classes with no examples being seen. Specifically, we propose a simple yet effective generative model that takes as input noisy text descriptions about an unseen class (e.g.Wikipedia articles) and generates synthesized visual features for this class. With added pseudo data, zero-shot learning is naturally converted to a traditional classification problem. Additionally, to preserve the inter-class discrimination of the generated features, a visual pivot regularization is proposed as an explicit supervision.
 Unlike previous methods using complex engineered regularizers, our approach can suppress the noise well without additional regularization. Empirically, we show that our method consistently outperforms the state of the art on the largest available benchmarks on Text-based Zero-shot Learning.  
         </div>
+        
+        <div id = "CVPR18_bibtex", style="display: none">        
+        @inproceedings{zhu2018generative,<br>
+        title={A generative adversarial approach for zero-shot learning from noisy texts},<br>
+        author={Zhu, Yizhe and Elhoseiny, Mohamed and Liu, Bingchen and Peng, Xi and Elgammal, Ahmed},<br>
+        booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},<br>
+        pages={1004--1013},<br>
+        year={2018}
+        }
+        </div>
+        
           <!-- </i></p> -->
         <!-- <a href="http://eceweb1.rutgers.edu/vision/gts/gtos.html">project</a>  -->
         </font>
@@ -261,9 +273,15 @@ Unlike previous methods using complex engineered regularizers, our approach can 
           The exponentially increasing use of moving platforms for video capture introduces the urgent need to develop the general background subtraction algorithms with the capability to deal with the moving background. In this paper, we propose a multilayer-based framework for online background subtraction for videos captured by moving cameras. Unlike the previous treatments of the problem, the proposed method is not restricted to binary segmentation of background and foreground, but formulates it as a multi-label segmentation problem by modeling multiple foreground objects in different layers when they appear simultaneously in the scene. We assign an independent processing layer to each foreground object, as well as the background, where both motion and appearance models are estimated, and a probability map is inferred using a Bayesian filtering framework. Finally, Multi-label Graph-cut on Markov Random Field is employed to perform pixel-wise labeling. Extensive evaluation results show that the proposed method outperforms state-of-the-art methods on challenging video sequences.
           </div>
           <div id = "ICCV17_bibtex", style="display: none">
-          The exponentially 
+           @inproceedings{zhu2017multilayer, <br>
+            title={A multilayer-based framework for online background subtraction with freely moving cameras}, <br>
+            author={Zhu, Yizhe and Elgammal, Ahmed}, <br>
+            booktitle={Proceedings of the IEEE International Conference on Computer Vision}, <br>
+            pages={5132--5141}, <br>
+            year={2017} <br>
+            }
           </div>
-          
+                
           </font>
           </p>
       </div>
@@ -284,10 +302,23 @@ Unlike previous methods using complex engineered regularizers, our approach can 
         <a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Elhoseiny_Link_the_Head_CVPR_2017_paper.pdf">paper</a> |
         <a href="http://openaccess.thecvf.com/content_cvpr_2017/supplemental/Elhoseiny_Link_the_Head_2017_CVPR_supplemental.pdf">supp</a> |
         <a onclick="togglediv('CVPR17_abs')">abstract</a> |
+        <a onclick="togglediv('CVPR17_bibtex')">bibtex</a> |
         <a href="https://github.com/EthanZhu90/ZSL_PP">code</a> <br>
         <div id = "CVPR17_abs", style="display: none">
          In this paper, we study learning visual classifiers from unstructured text descriptions at part precision with no training images. We propose a learning framework that is able to connect text terms to its relevant parts and suppress connections to non-visual text terms without any part-text annotations.  For instance, this learning process enables terms like ``beak'' to be sparsely linked to the visual representation of parts like head, while reduces the effect of non-visual terms like ``migrate'' on classifier prediction.  Images are encoded by a part-based CNN that detect bird parts and learn part-specific representation. Part-based visual classifiers are predicted from text descriptions of unseen visual classifiers to facilitate classification without training images (also known as zero-shot recognition). We performed our experiments on CUBirds 2011 dataset and improves the state-of-the-art text-based zero-shot recognition results from 34.7\% to 43.6\%. We also created large scale benchmarks on North American Bird Images augmented with text descriptions, where we also show that our approach outperforms existing methods. 
          </div>
+         <div id = "CVPR17_bibtex", style="display: none">
+           @inproceedings{elhoseiny2017link, <br>
+              title={Link the head to the" beak": Zero shot learning from noisy text description at part precision}, <br>
+              author={Elhoseiny, Mohamed and Zhu, Yizhe and Zhang, Han and Elgammal, Ahmed}, <br>
+              booktitle={2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, <br>
+              pages={6288--6297}, <br>
+              year={2017}, <br>
+              organization={IEEE} <br>
+            }
+          </div>
+        
+        
         </font>
       </p>
     </div>
@@ -299,6 +330,9 @@ Unlike previous methods using complex engineered regularizers, our approach can 
         div.style.display = div.style.display == "none" ? "block" : "none";
     }
     </script>
+      
+      
+      
      <!-- block -->
     <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=uUnZk8Z2r5iKnbxl6FtRkMDbwLa7jor51ZHMC5PgM9s"></script>
     
