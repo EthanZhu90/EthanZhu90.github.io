@@ -129,7 +129,7 @@
         <em>Thirty-third Conference on Neural Information Processing Systems</em>,  Vancouver, Canada, Dec. 2019<br>
         <a href="https://arxiv.org/abs/1903.00502">paper</a> |
         <a onclick="togglediv('NeurIPS19_MA')">abstract</a> |
-        <a onclick="togglediv('NeurIPS19_MA_bibtex')">bibtex</a> |
+        <a onclick="togglespan('NeurIPS19_MA_bibtex')">bibtex</a> |
         <a>poster</a> |
         <a>code</a> <br>
         <!--<p xml:space="preserve"> <i id="CVPR18_GAZSL" style="display: none;"> -->
@@ -150,17 +150,16 @@ experiments on three widely used zero-shot learning benchmarks, we show the
 efficacy of the multi-attention localization and our proposed approach improves the
 state-of-the-art results by a considerable margin.
         </div>
-        
-<div id = "NeurIPS19_MA_bibtex", style="display: none">
-@article{Yizhe_2019_ICCV,
-title={Semantic-Guided Multi-Attention Localization for Zero-Shot Learning},
-author={Zhu, Yizhe and Xie, Jianwen and Tang, Zhiqiang and Peng, Xi and Elgammal, Ahmed},
-booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
-month = {Oct},
-year = {2019}
-}
-  
-</div>
+
+      <span id = "NeurIPS19_MA_bibtex", style="display: none">
+      @article{Yizhe_2019_ICCV,
+      title={Semantic-Guided Multi-Attention Localization for Zero-Shot Learning},
+      author={Zhu, Yizhe and Xie, Jianwen and Tang, Zhiqiang and Peng, Xi and Elgammal, Ahmed},
+      booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
+      month = {Oct},
+      year = {2019}
+      }
+      </span>
         
           <!-- </i></p> -->
         <!-- <a href="http://eceweb1.rutgers.edu/vision/gts/gtos.html">project</a>  -->
@@ -294,7 +293,12 @@ Unlike previous methods using complex engineered regularizers, our approach can 
     <script>
     function togglediv(id) {
         var div = document.getElementById(id);
-        div.style.display = div.style.display == "none" ? "inline" : "none";
+        div.style.display = div.style.display == "none" ? "block" : "none";
+    }
+
+    function togglespan(id) {
+        var span = document.getElementById(id);
+        span.style.display = span.style.display == "none" ? "inline" : "none";
     }
     </script>
      <!-- block -->
