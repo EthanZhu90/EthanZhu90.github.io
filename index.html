@@ -130,23 +130,23 @@
         <em>IEEE Conference on Computer Vision and Pattern Recognition</em>, Seattle, June 2020<br>
         <a href="figure/S3VAE.pdf">paper</a> |
         <a onclick="togglediv('CVPR20_S3VAE')">abstract</a> |
-        <!--<a onclick="togglediv('CVPR20_S3VAE_bibtex')">bibtex</a>--> |
-        poster |
+        <a onclick="togglediv('CVPR20_S3VAE_bibtex')">bibtex</a>--> |
+        <a href="figure/S3VAE-slides.pdf">slides</a>  |
         code <br>
         <!--<p xml:space="preserve"> <i id="CVPR18_GAZSL" style="display: none;"> -->
         <div id = "CVPR20_S3VAE", style="display: none">
           We propose a sequential variational autoencoder to learn disentangled representations of sequential data (e.g., videos and audios) under self-supervision. Specifically, we exploit the benefits of some readily accessible supervision signals from input data itself or some off-the-shelf functional models and accordingly design auxiliary tasks for our model to utilize these signals. With the supervision of the signals, our model can easily disentangle the representation of an input sequence into static factors and dynamic factors (i.e., time-invariant and time-varying parts). Comprehensive experiments across videos and audios verify the effectiveness of our model on representation disentanglement and generation of sequential data, and demonstrate that, our model with self-supervision performs comparable to, if not better than, the fully-supervised model with ground truth labels, and outperforms state-of-the-art unsupervised models by a large margin. As far as we know, our model is the first that employs self-supervision for disentangled representation learning of sequential data.
         </div>
 
-      <div id = "CVPR20_S3VAE_bibtex", style="display: none">
-      @InProceedings{zhu2019semantic, <br>
-      title={Semantic-Guided Multi-Attention Localization for Zero-Shot Learning}, <br>
-      author={Zhu, Yizhe and Xie, Jianwen and Tang, Zhiqiang and Peng, Xi and Elgammal, Ahmed},  <br>
-      booktitle = {Thirty-third Conference on Neural Information Processing Systems (NeurIPS)},  <br>
-      month = {Dec},  <br>
-      year = {2019} <br>
-      }
-      </div>
+        <div id = "CVPR20_S3VAE_bibtex", style="display: none">
+        @inproceedings{zhu2020S3VAE,<br>
+          title={S3VAE: Self-Supervised Sequential VAE for Representation Disentanglement and  Data Generation},<br>
+          author={Zhu, Yizhe and Min, Martin Renqiang and Kadav, Asim and Graf, Hans Peter},<br>
+          booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br>
+          year={2020} <br>
+          }
+          </div>
+        </div>
         
           <!-- </i></p> -->
         <!-- <a href="http://eceweb1.rutgers.edu/vision/gts/gtos.html">project</a>  -->
